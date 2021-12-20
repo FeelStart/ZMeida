@@ -38,13 +38,14 @@ int BaseMp3Codec::Init(const char *pcmFilePath,
 
 BaseMp3Codec::~BaseMp3Codec()
 {
+    lame_close(lameClient);
 }
 
 int BaseMp3Codec::encode()
 {
     // 目前只支持双声道
     assert(channels == 2);
-    assert(bitRate == 16 * 1024);
+    //assert(bitRate == 16 * 1024);
 
     // 跳过 pcm header，否则有噪音在 mp3 处播放
     fseek(pcmFile, 4 * 1024, SEEK_CUR);
