@@ -44,6 +44,7 @@ int BaseMp3Codec::encode()
 {
     // 目前只支持双声道
     assert(channels == 2);
+    assert(bitRate == 16 * 1024);
 
     // 跳过 pcm header，否则有噪音在 mp3 处播放
     fseek(pcmFile, 4 * 1024, SEEK_CUR);
@@ -76,7 +77,7 @@ int BaseMp3Codec::encode()
         }
     };
 
-    // Mp3 VBR Tag，不是必须
+    // Mp3 VBR Tag，不是必须。不写可能会导致某些播放器播放时获取时长出现问题。
     lame_mp3_tags_fid(lameClient, mp3File);
 
     delete [] buffer;
