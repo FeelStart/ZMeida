@@ -6,10 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Mp3Codec/Mp3CodecProtocol.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Mp3Codec_Public : NSObject
+@interface Mp3Codec : NSObject <Mp3CodecProtocol>
 
 @end
 

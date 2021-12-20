@@ -15,4 +15,5 @@ FOUNDATION_EXPORT const unsigned char Mp3CodecVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Mp3Codec/PublicHeader.h>
 
-
+#import <Mp3Codec/Mp3Codec-Public.h>
+#import <Mp3Codec/Mp3CodecProtocol.h>

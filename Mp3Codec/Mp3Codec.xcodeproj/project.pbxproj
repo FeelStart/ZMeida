@@ -10,8 +10,11 @@
 		C57AFC9727706972006300AD /* Mp3Codec.h in Headers */ = {isa = PBXBuildFile; fileRef = C57AFC9627706972006300AD /* Mp3Codec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C57AFCA3277069BF006300AD /* lame.h in Headers */ = {isa = PBXBuildFile; fileRef = C57AFCA0277069BF006300AD /* lame.h */; };
 		C57AFCA4277069BF006300AD /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C57AFCA2277069BF006300AD /* libmp3lame.a */; };
-		C57AFCA727706A2E006300AD /* Mp3Codec-Public.h in Headers */ = {isa = PBXBuildFile; fileRef = C57AFCA527706A2E006300AD /* Mp3Codec-Public.h */; };
+		C57AFCA727706A2E006300AD /* Mp3Codec-Public.h in Headers */ = {isa = PBXBuildFile; fileRef = C57AFCA527706A2E006300AD /* Mp3Codec-Public.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C57AFCA827706A2E006300AD /* Mp3Codec-Public.mm in Sources */ = {isa = PBXBuildFile; fileRef = C57AFCA627706A2E006300AD /* Mp3Codec-Public.mm */; };
+		C57AFCAB27706C12006300AD /* BaseMp3Codec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C57AFCA927706C12006300AD /* BaseMp3Codec.cpp */; };
+		C57AFCAC27706C12006300AD /* BaseMp3Codec.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C57AFCAA27706C12006300AD /* BaseMp3Codec.hpp */; };
+		C57AFCAE27707749006300AD /* Mp3CodecProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = C57AFCAD27707749006300AD /* Mp3CodecProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		C57AFCA2277069BF006300AD /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
 		C57AFCA527706A2E006300AD /* Mp3Codec-Public.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mp3Codec-Public.h"; sourceTree = "<group>"; };
 		C57AFCA627706A2E006300AD /* Mp3Codec-Public.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "Mp3Codec-Public.mm"; sourceTree = "<group>"; };
+		C57AFCA927706C12006300AD /* BaseMp3Codec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BaseMp3Codec.cpp; sourceTree = "<group>"; };
+		C57AFCAA27706C12006300AD /* BaseMp3Codec.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BaseMp3Codec.hpp; sourceTree = "<group>"; };
+		C57AFCAD27707749006300AD /* Mp3CodecProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mp3CodecProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 				C57AFC9627706972006300AD /* Mp3Codec.h */,
 				C57AFCA527706A2E006300AD /* Mp3Codec-Public.h */,
 				C57AFCA627706A2E006300AD /* Mp3Codec-Public.mm */,
+				C57AFCAD27707749006300AD /* Mp3CodecProtocol.h */,
+				C57AFCA927706C12006300AD /* BaseMp3Codec.cpp */,
+				C57AFCAA27706C12006300AD /* BaseMp3Codec.hpp */,
 			);
 			path = Mp3Codec;
 			sourceTree = "<group>";
@@ -102,6 +111,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C57AFCAE27707749006300AD /* Mp3CodecProtocol.h in Headers */,
+				C57AFCAC27706C12006300AD /* BaseMp3Codec.hpp in Headers */,
 				C57AFCA727706A2E006300AD /* Mp3Codec-Public.h in Headers */,
 				C57AFC9727706972006300AD /* Mp3Codec.h in Headers */,
 				C57AFCA3277069BF006300AD /* lame.h in Headers */,
@@ -177,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C57AFCA827706A2E006300AD /* Mp3Codec-Public.mm in Sources */,
+				C57AFCAB27706C12006300AD /* BaseMp3Codec.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
