@@ -67,6 +67,7 @@ int BaseMp3Codec::encode()
                 rightBuffer[i/2] = buffer[i];
             }
 
+            // TODO: nsamples 参数应该为 readBufferSize？
             size_t writeBufferSize = lame_encode_buffer(lameClient,
                                                         (short int *)leftBuffer,
                                                         (short int *)rightBuffer,
